@@ -14,6 +14,7 @@ import java.util.LinkedList;
 public class Main {
     public static void main(String[] args) {
         LinkedList<Pessoa> bdPessoas = new LinkedList<>();
+        LinkedList<Aluno> bdAlunos = new LinkedList<>();
         int escolha;
         boolean finalizar = false;
         Scanner leitor = new Scanner(System.in);
@@ -56,11 +57,18 @@ public class Main {
                     }
 
                 case 4:
-
-
+                    System.out.println("Insira o nome:");
+                    String nomeAluno = leitor.next();
+                    System.out.println("Insira o sobrenome:");
+                    String sobrenomeAluno = leitor.next();
+                    System.out.println("Insira a idade:");
+                    int idadeAluno = leitor.nextInt();
+                    Aluno aluno = new Aluno(nomeAluno, sobrenomeAluno, idadeAluno);
+                    aluno.addAluno(aluno, bdAlunos);
+                    break;
             }
 
-        } while (finalizar == false);
+        } while (!finalizar);
 
 
         }

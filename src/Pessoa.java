@@ -2,7 +2,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Pessoa {
-    String nome, sobrenome;
+    String nome;
+    String sobrenome;
     int idade, cpf;
     public static LinkedList<Integer> identifier = new LinkedList<>();
     public static int cont = - 1;
