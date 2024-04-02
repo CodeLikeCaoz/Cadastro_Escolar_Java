@@ -33,4 +33,18 @@ public class Pessoa {
         System.out.println("Nova pessoa adicionada ao registro: " + pessoa + "\n");
         bdPessoas.add(pessoa);
     }
+
+    public void addAluno(Pessoa pessoa, LinkedList<Aluno> bdAlunos) {
+        Aluno aluno = new Aluno(pessoa.nome, pessoa.sobrenome, pessoa.idade);
+        System.out.println("Novo aluno adicionada ao registro: " + pessoa + "\n");
+        bdAlunos.add(aluno);
+    }
+
+    public void addProfessor(Pessoa pessoa, LinkedList<Professor> bdProfessores) {
+        Professor professor = new Professor(pessoa.nome, pessoa.sobrenome, pessoa.idade);
+        System.out.println("Novo professor adicionada ao registro: " + professor + "\n");
+        bdProfessores.add(professor);
+    }
+
+
 }
